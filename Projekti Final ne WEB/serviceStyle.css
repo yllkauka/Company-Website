@@ -68,68 +68,6 @@ nav ul li.btn{
 nav ul li.btn.hide i:before{
   content: '\f00d';
 }
-
-.services{
-  text-align: center;
-  background-color: #424242;
-  max-width: auto;
-}
-
-.services h1{
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 1px solid #5162fc;
-  font-size: 20px;
-  padding-bottom: 10px; 
-  margin-top: 40px; 
-}
-
-.content{
-max-width: 1000px;
-margin: auto;
-overflow: hidden;
-padding: 20px;
-}
-
-.service{
-  display: inline-block;
-  margin: 10px;
-  padding: 40px;
-  box-sizing: border-box;
-  box-shadow: 3.5px 3.5px rgb(0, 0, 0);
-  cursor: pointer;
-  background: rgb(0, 0, 0);
-  color: #fff;
-}
-.service:hover {
-background: #333333;
-color: #fff;
-transition-duration: 0.2s;
-}
-
-
-.service h2{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight:400;
-  margin: 0;
-}
-.service p{
-  color: rgb(155, 155, 155);
-  font-size: 16px;
-  font-weight: 300;
-}
-
-/*Footeri*/
-#main-footer {
-    text-align: center;
-    background: rgb(0, 0, 0);
-    color: #fff;
-    padding: 20px;
-}
-
-
-/*Responsiviteti per IPAD & IPHONE X*/
 @media all and (max-width: 900px){
   nav{
     padding: 5px 30px;
@@ -153,22 +91,160 @@ transition-duration: 0.2s;
     opacity: 0;
   }
 }
-  
-  /* Responsiviteti per footer */
-  @media screen and (max-width: 768px) {
-    #main-footer {
-      padding: 20px;
-    }
+ 
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  transition: 2s ease;
+}
+
+.slide {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.slide-data {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-50%);
+  padding: 0 20%;
+}
+
+.slide-data h1 {
+  font-family: "Anton", serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.slide-data p {
+  font-family: "Lato", serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slide-1 {
+  background-image: url(Image/slider1.jpg);
+}
+
+.slide-2 {
+  background-image: url(Image/slider2.jpg);
+}
+
+.slide-3 {
+  background-image: url(Image/slider3.jpg);
+}
+
+.slider .arrows {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 60px;
+  transition: 0.4s linear;
+}
+
+.slider .arrows:hover {
+  color: #000;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
+}
+
+.slider .arrows label {
+  display: none;
+}
+
+.slider .arrow-left {
+  left: 3%;
+}
+
+.slider .arrow-right {
+  right: 3%;
+}
+
+.slider input:nth-child(1):checked ~ .slides {
+  left: 0;
+}
+
+.slider input:nth-child(2):checked ~ .slides {
+  left: -100%;
+}
+
+.slider input:nth-child(3):checked ~ .slides {
+  left: -200%;
+}
+
+.slider input:nth-child(1):checked ~ .arrows label:nth-child(1),
+.slider input:nth-child(2):checked ~ .arrows label:nth-child(2),
+.slider input:nth-child(3):checked ~ .arrows label:nth-child(3) {
+  display: block;
+}
+
+.slider .dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+}
+
+.slider .dots label {
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 6px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.slider input:nth-child(1):checked ~ .dots label:nth-child(1),
+.slider input:nth-child(2):checked ~ .dots label:nth-child(2),
+.slider input:nth-child(3):checked ~ .dots label:nth-child(3) {
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+
+/*Footeri*/
+#main-footer {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: rgb(248, 248, 248);
+  padding: 40px;
+  font-family: "Helvetica";
+}
+
+/* Responsiviteti per footer */
+@media screen and (max-width: 768px) {
+  #main-footer {
+    padding: 20px;
   }
-
-
-@media screen and (max-width: 800px) {
-    .service{
-    width: 50%;
-    }
-    }
-    @media screen and (max-width: 500px) {
-    .service{
-    width: 100%;
-    }
-    }
+}
+  
