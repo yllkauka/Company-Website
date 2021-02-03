@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+/* Background per Kontakt-in */
+section {
+  background: url(Image/contactt.jpg);
+  font-family: 'Montserrat',sans-serif;
+}
+
+/* Per rritjen e hapesires ne faqe */
+.y-1 { 
+  padding: 50px 0; 
+} 
+
+/* Per pjesen e pare te faqes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+  color: rgb(121, 143, 156);
+}
+
+/* Per pjesen e titullit */
+.titulli {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+/* Nentitulli */
+p {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: rgb(182, 220, 235);
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Butoni Send */
+.button {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: rgb(40, 46, 99);
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: #8ab6f7;
+  color: rgb(0, 0, 0);
+}
+
+/* Informatat ne section */
+.informata {
+  background: #333;
+  color: #fff;
+}
+
+/* Per lokacionin, adresen, dhe nr. e tel */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Logoja e box */
+.box i {
+  margin-bottom: 10px;
+}
+
+/*Footeri*/
+#main-footer {
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 20px;
+}
+
+/*Responsiviteti per IPAD & IPHONE X*/
+
+/* Responsiviteti per Nav Bar */
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+/* Responsiviteti per footer */
+@media screen and (max-width: 768px) {
+  #main-footer {
+    padding: 20px;
+  }
+}

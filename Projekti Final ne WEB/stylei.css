@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+/* Mesi i faqes, -Welcome- */
+#showcase {
+    background: url('Image/h1.jpg') no-repeat center center/cover;
+    height: 600px;
+
+}
+  
+#showcase .showcase-content {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 180px;
+}
+  
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+  
+#showcase .showcase-content p {
+    padding-bottom: 70px;
+    line-height: 1.7em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Mesi i faqes About Our Company */
+.button {  
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    padding: 16px 35px;
+    border-radius: 60px;
+    text-decoration: none; 
+    
+}
+  
+.button:hover {
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.button-light {
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+/* Informatat per Home Page ku ke shkru Historin*/
+#home-info {
+    height: 300px;
+}
+  
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('Image/home.jpg') no-repeat;
+    min-height: 100%;
+}
+  
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+    font-family: "Helvetica";
+    background-color: rgb(127, 151, 172);
+}
+  
+#home-info .info-content {
+    padding-bottom: 30px;
+}
+
+/*Footeri*/
+#main-footer {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
+    padding: 40px;
+    font-family: "Helvetica";
+}
+
+/*Responsiviteti*/
+
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    #home-info {
+       height: 550px;
+    }
+    #showcase {
+       height: 100%;
+    }
+    
+    #showcase .showcase-content {
+       padding-top: 70px;
+       padding-bottom: 30px;
+    }
+    #home-info .info-img {
+       display: none;
+    }
+    
+    #home-info .info-content {
+       float: none;
+       width: 100%;
+    }
+    #main-footer{
+       padding: 20px;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: rgb(240, 240, 240);
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+/* Per rritjen e hapesires ne faqe */
+.y-1 { 
+  padding: 50px 0; 
+} 
+
+/* Per pjesen e pare te faqes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/* Teksti ne te majt */
+.info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Titulli mbi tekst */
+.titulli {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #4b4f5c;
+}
+
+/* Per pjesen ku eshte vendos fotoja ne te djatht */
+.info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Per stilin e fotos */
+.info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+/* Pjesa e background per opinione */
+#komentet {
+  height: 100%;
+  background: url('Image/ab.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+/* Pjesa e titullit te komenti */
+#komentet h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* Opinionet e klienteve */
+#komentet .opinione {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  opacity: 0.9;
+  background-color: rgb(131, 115, 115);
+}
+
+/*Footeri*/
+#main-footer {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 20px;
+}
+
+/*Responsiviteti per IPAD & IPHONE X*/
+
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
+
+
+/* Responsiviteti per footer */
+@media screen and (max-width: 768px) {
+  #main-footer {
+    padding: 20px;
+  }
+}
