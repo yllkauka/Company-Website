@@ -70,57 +70,54 @@ nav ul li.btn.hide i:before{
 }
 
 .services{
-text-align: center;
-width: 100%;
-height: 100vh;
+  text-align: center;
+  background-color: #424242;
+  max-width: auto;
 }
 
 .services h1{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 1px solid #fc5185;
-font-size: 20px;
-padding-bottom: 10px;
-margin-top: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #5162fc;
+  font-size: 20px;
+  padding-bottom: 10px; 
+  margin-top: 40px; 
 }
 
 .content{
-max-width: 1200px;
+max-width: 1000px;
 margin: auto;
 overflow: hidden;
 padding: 20px;
 }
+
 .service{
-display: inline-block;
-width: calc(100% /3);
-margin:5px;
-padding: 40px;
-box-sizing: border-box;
-box-shadow: 0 10px 20px rgba(0,0,0,0.17), 0 4px 5px rgba(0,0,0,0.29);
-cursor: pointer;
-transition: 0.4s;
-background: #fff;
+  display: inline-block;
+  margin: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  color: #fff;
 }
 .service:hover {
 background: #333333;
 color: #fff;
-transition-duration: 0.9s;
+transition-duration: 0.2s;
 }
-.service i{
-color: #fc5185;
-font-size: 64px;
-margin-bottom: 30px;
-}
+
+
 .service h2{
-font-size: 18px;
-text-transform: uppercase;
-font-weight:400;
-margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight:400;
+  margin: 0;
 }
 .service p{
-color: gray;
-font-size: 15px;
-font-weight: 500;
+  color: rgb(155, 155, 155);
+  font-size: 16px;
+  font-weight: 300;
 }
 
 /*Footeri*/
