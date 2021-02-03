@@ -228,7 +228,7 @@ nav ul li.btn.hide i:before{
 .slider input:nth-child(2):checked ~ .dots label:nth-child(2),
 .slider input:nth-child(3):checked ~ .dots label:nth-child(3) {
   background-color: #000;
-  border: 2px solid #fff;
+  border: 2px solid rgb(248, 248, 248);
 }
 
 
