@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("Image/fotosignup.jpg");
+    background-image: url("Image/foto7.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
@@ -20,8 +20,8 @@ body {
     width: 500px;
     margin: 70px auto;
     color: rgb(236, 231, 206);
-    background:rgb(40, 67, 155);
-    opacity: 0.5;
+    background:rgb(0, 0, 0);
+    opacity: 0.9;
     
 }
 
@@ -104,10 +104,11 @@ p a{
     padding-left: 13px;
     color: #368ef3;
 }
-@media only screen and (max-width: 375px){
-    .signup-form {
-        width: 500px;
-        height: 100px;
-        padding: 150px;
-    }
+
+        @media only screen and (max-width: 400px){
+            .body{
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-image: url("Image/foto7.jpg");
+            }
 }
