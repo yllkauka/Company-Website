@@ -72,18 +72,17 @@ body {
 button{
     background-color: rgb(26, 101, 214);
     color: black;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px 35px;
     margin-left: 195px;
     border: none;
 }
 
 button:hover{
-    background-color:  rgb(128, 154, 240);
+    background-color:  rgb(51, 50, 50);
     padding: 10px 35px;
-    transition: .5s;
     font-size: 13px;
-    cursor: pointer;
+    color: white;
 }
 
 p{
