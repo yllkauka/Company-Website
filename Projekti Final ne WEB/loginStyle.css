@@ -94,7 +94,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 400px){
-#container{
+.body{
     background-repeat: no-repeat;
     background-size: auto;
     background-image: url("Image/foto7.jpg");
