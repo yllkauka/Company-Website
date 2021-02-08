@@ -13,17 +13,15 @@ body {
     background-attachment: fixed;
 }
 
-
 .login-form{
-    width: 30%;
+    border-radius: 40px;
     height: 300px;
-    float: right;
-    margin-top: 150px;
-    margin-right: 150px;
-    background-color: black;
-    border-radius: 30px;
-    opacity: 0.8;
+    width: 400px;
+    margin: 100px auto;
+    color: rgb(236, 231, 206);
+    background:rgb(0, 0, 0);
 }
+
 
 .login-form h2{
     margin-top: 30px;
