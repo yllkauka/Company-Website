@@ -14,6 +14,6 @@ function register(){
     }else if(!email.match(gmailCorrect)){
         alert("Email incorrect !");
     }else{
-        window.location = "index.html";
+        window.location = "index.php";
     }
 }

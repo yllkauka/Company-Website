@@ -5,7 +5,7 @@ function validate(){
     var password = document.getElementById("password").value;
 
     if(username == "admin" && password == "admin"){
-        window.location = "index.html";
+        window.location = "index.php";
     }else{
         attemp--;
         if(attemp >= 0){

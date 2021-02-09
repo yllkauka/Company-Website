@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
+  <?php
+include './php/contactValidation.php';
+?>
+
 <body>
   <header>
     <nav>
