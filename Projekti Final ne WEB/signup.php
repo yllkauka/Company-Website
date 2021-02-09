@@ -48,7 +48,7 @@
             </a>
 
             <br><br>
-            <p>You have an account? <a href="login.html"> Log in</a></p>
+            <p>You have an account? <a href="login.php"> Log in</a></p>
 
 
             </div>

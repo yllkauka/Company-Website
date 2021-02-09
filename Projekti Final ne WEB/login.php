@@ -30,7 +30,7 @@
                 </a>
                 <br> <br>
                 <p>You don't have an account?
-                    <a href="signup.html">Sign Up</a>
+                    <a href="signup.php">Sign Up</a>
                 </p>
                 </form>
             </div>

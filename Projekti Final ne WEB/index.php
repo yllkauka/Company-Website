@@ -14,12 +14,12 @@
   <nav>
     <ul>
       <li class="logo">F&M</li>
-      <li class="items"><a href="index.html">Home</a></li>
-      <li class="items"><a href="industries.html">Industries</a></li>
-      <li class="items"><a href="service.html">Services</a></li>
-      <li class="items"><a href="contact.html">Contact</a></li>
-      <li class="items"><a href="about.html">About Us</a></li>
-      <li class="items"><a href="login.html">Log Out</a></li>
+      <li class="items"><a href="index.php">Home</a></li>
+      <li class="items"><a href="industries.php">Industries</a></li>
+      <li class="items"><a href="service.php">Services</a></li>
+      <li class="items"><a href="contact.php">Contact</a></li>
+      <li class="items"><a href="about.php">About Us</a></li>
+      <li class="items"><a href="login.php">Log Out</a></li>
       <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
@@ -38,7 +38,7 @@
     <div class="showcase-content">
       <h1>Welcome</h1>
       <p class="lead">Follow your passion; it will lead you to your purpose.</p>
-      <a class="button" href="industries.html"> Our Work</a>
+      <a class="button" href="industries.php"> Our Work</a>
     </div>
     </div>
     </div>
@@ -51,7 +51,7 @@
     <p>We are a team of professionals reflecting integrity 
       and confidence we are enthusiastic and energetic, 
       well-prepared to organize. </p>
-    <a href="industries.html" class="button button-light">Read More</a>
+    <a href="industries.php" class="button button-light">Read More</a>
   </div>
 </section>
   <section>
