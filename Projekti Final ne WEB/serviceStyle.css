@@ -5,29 +5,34 @@
   box-sizing: border-box;
   font-family: 'Montserrat',sans-serif;
 }
-nav{
+
+nav {
   background: #151515;
   padding: 5px 40px;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-nav ul li{
+
+nav ul li {
   padding: 15px 0;
   cursor: pointer;
 }
-nav ul li.items{
+
+nav ul li.items {
   position: relative;
   width: auto;
   margin: 0 16px;
   text-align: center;
   order: 3;
 }
-nav ul li.items:after{
+
+nav ul li.items:after {
   position: absolute;
   content: '';
   left: 0;
@@ -38,11 +43,13 @@ nav ul li.items:after{
   opacity: 0;
   transition: all 0.2s linear;
 }
-nav ul li.items:hover:after{
+
+nav ul li.items:hover:after {
   opacity: 1;
   bottom: 8px;
 }
-nav ul li.logo{
+
+nav ul li.logo {
   flex: 1;
   color: white;
   font-size: 23px;
@@ -50,127 +57,136 @@ nav ul li.logo{
   cursor: default;
   user-select: none;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   font-size: 18px;
   text-decoration: none;
   transition: .4s;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
   color: cyan;
 }
-nav ul li i{
+
+nav ul li i {
   font-size: 23px;
 }
-nav ul li.btn{
+
+nav ul li.btn {
   display: none;
 }
-nav ul li.btn.hide i:before{
+
+nav ul li.btn.hide i:before {
   content: '\f00d';
 }
 
-.services{
-text-align: center;
-background-color: #424242;
-max-width: auto;
+.services {
+  text-align: center;
+  background-color: #424242;
+  max-width: auto;
 }
 
-.services h1{
-display: inline-block;
-text-transform: uppercase;
-border-bottom: 1px solid #5162fc;
-font-size: 20px;
-padding-bottom: 10px; 
-margin-top: 40px; 
+.services h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #5162fc;
+  font-size: 20px;
+  padding-bottom: 10px; 
+  margin-top: 40px; 
 }
 
-.content{
-max-width: 1000px;
-margin: auto;
-overflow: hidden;
-padding: 20px;
+.content {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
 }
 
-.service{
-display: inline-block;
-margin: 10px;
-padding: 40px;
-box-sizing: border-box;
-box-shadow: 3.5px 3.5px rgb(0, 0, 0);
-cursor: pointer;
-background: rgb(0, 0, 0);
-color: #fff;
+.service {
+  display: inline-block;
+  margin: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 3.5px 3.5px rgb(0, 0, 0);
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  color: #fff;
 }
 
 .service:hover {
-background: #333333;
-color: #fff;
-transition-duration: 0.2s;
+  background: #333333;
+  color: #fff;
+  transition-duration: 0.2s;
 }
 
-
 .service h2{
-font-size: 18px;
-text-transform: uppercase;
-font-weight:400;
-margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight:400;
+  margin: 0;
 }
 
 .service p{
-color: rgb(155, 155, 155);
-font-size: 16px;
-font-weight: 300;
+  color: rgb(155, 155, 155);
+  font-size: 16px;
+  font-weight: 300;
 }
 
 /* Footeri */
 #main-footer {
-    text-align: center;
-    background: rgb(0, 0, 0);
-    color: #fff;
-    padding: 20px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 20px;
 } 
 
 
 /*Responsiviteti per IPAD & IPHONE X*/
 @media all and (max-width: 900px){
-  nav{
+  nav {
     padding: 5px 30px;
   }
-  nav ul li.items{
+
+  nav ul li.items {
     width: 100%;
     display: none;
   }
-  nav ul li.items.show{
+
+  nav ul li.items.show {
     display: block;
   }
-  nav ul li.btn{
+
+  nav ul li.btn {
     display: block;
   }
-  nav ul li.items:hover{
+
+  nav ul li.items:hover {
     border-radius: 5px;
-    box-shadow: inset 0 0 5px #37fafa,
-                inset 0 0 10px #66ffff;
+    box-shadow: inset 0 0 5px #37fafa, inset 0 0 10px #66ffff;
   }
+  
   nav ul li.items:hover:after{
     opacity: 0;
   }
 }
   
   /* Responsiviteti per footer */
-  @media screen and (max-width: 768px) {
-    #main-footer {
-      padding: 20px;
-    }
+@media screen and (max-width: 768px) {
+  #main-footer {
+    padding: 20px;
   }
+}
 
 
 @media screen and (max-width: 800px) {
-    .service{
+  .service{
     width: 50%;
-    }
-    }
-    @media screen and (max-width: 500px) {
-    .service{
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service{
     width: 100%;
-    }
-    }
+  }
+}
