@@ -16,7 +16,7 @@
         <li class="logo">F&M</li>
         <li class="items"><a href="index.php">Home</a></li>
         <li class="items"><a href="industries.php">Industries</a></li>
-        <li class="items"><a href="service.php">Services</a></li>
+         <li class="items"><a href="service.php">Services</a></li>
         <li class="items"><a href="contact.php">Contact</a></li>
         <li class="items"><a href="about.php">About Us</a></li>
         <li class="items"><a href="login.php">Log Out</a></li>
