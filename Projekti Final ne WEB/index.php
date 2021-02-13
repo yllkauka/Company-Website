@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
     <head>
+    
         <meta charset="UTF-8">
         <title> Finance & Management </title>
         <link rel="stylesheet" href="stylei.css">
