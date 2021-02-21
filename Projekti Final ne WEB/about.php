@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us</title>
-    <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="stylesheet" href="CSS/aboutStyle.css">
     <link rel="icon" href="Image/aboutl.png">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

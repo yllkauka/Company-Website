@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title> Finance & Management </title>
-        <link rel="stylesheet" href="stylei.css">
+        <link rel="stylesheet" href="CSS/stylei.css">
         <link rel="shortcut icon" href="Image/foto1.png"> 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signupStyle.css">
+    <link rel="stylesheet" href="CSS/signupStyle.css">
     <link rel="icon" href="Image/signup.png">
     <script src="JS/signup.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

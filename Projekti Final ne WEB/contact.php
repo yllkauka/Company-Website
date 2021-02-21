@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
-    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="CSS/contactStyle.css">
     <link rel="icon" href="Image/Contact.png">
     <script src="JS/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

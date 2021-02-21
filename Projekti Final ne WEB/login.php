@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
-    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="CSS/loginStyle.css">
     <link rel="icon" href="Image/login.png">
     <script src="JS/login.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
