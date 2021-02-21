@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="CSS/signupStyle.css">
     <link rel="icon" href="Image/signup.png">
     <script src="JS/signup.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
