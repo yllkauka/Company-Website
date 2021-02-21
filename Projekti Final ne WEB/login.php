@@ -1,40 +1,53 @@
-<!DOCTYPE html>
-<html land="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <title>Log In</title>
-    <link rel="stylesheet" href="CSS/loginStyle.css">
-    <link rel="icon" href="Image/login.png">
-    <script src="JS/login.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <main>
-        <div id="container">
-            <div class="login-form">
-                <form action="" method="POST" autocomplete="off">
-                    <h2>Log In</h2>
-                <div class="user-box">
-                    <input type="text" name="username" id="username" required>
-                    <label>Username</label>
-                </div>
-                <div class="user-box">
-                    <input type="password" name="password" id="password" required>
-                    <label>Password</label>
-                </div>
-            </form>
-                <a>
-                <button type="submit" onclick="validate()">Log in</button>
-                </a>
-                <br> <br>
-                <p>You don't have an account?
-                    <a href="signup.php">Sign Up</a>
-                </p>
-                </form>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+<?php 
+session_start(); 
+include "db_conn.php";
+
+if (isset($_POST['uname']) && isset($_POST['password'])) {
+
+	function validate($data){
+       $data = trim($data);
+	   $data = stripslashes($data);
+	   $data = htmlspecialchars($data);
+	   return $data;
+	}
+
+	$uname = validate($_POST['uname']);
+	$pass = validate($_POST['password']);
+
+	if (empty($uname)) {
+		header("Location: index1.php?error=User Name is required");
+	    exit();
+	}else if(empty($pass)){
+        header("Location: index1.php?error=Password is required");
+	    exit();
+	}else{
+		// hashing the password
+        $pass = md5($pass);
+
+        
+		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
+
+		$result = mysqli_query($conn, $sql);
+
+		if (mysqli_num_rows($result) === 1) {
+			$row = mysqli_fetch_assoc($result);
+            if ($row['user_name'] === $uname && $row['password'] === $pass) {
+            	$_SESSION['user_name'] = $row['user_name'];
+            	$_SESSION['name'] = $row['name'];
+            	$_SESSION['id'] = $row['id'];
+            	header("Location: index.php");
+		        exit();
+            }else{
+				header("Location: index1.php?error=Incorect User name or password");
+		        exit();
+			}
+		}else{
+			header("Location: index1.php?error=Incorect User name or password");
+	        exit();
+		}
+	}
+	
+}else{
+	header("Location: index1.php");
+	exit();
+}

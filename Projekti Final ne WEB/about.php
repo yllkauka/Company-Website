@@ -2,7 +2,7 @@
 
 <html lang="en" dir="ltr">
 
-<head>
+<head> 
 
   <meta charset="UTF-8">
   <title>About Us</title>
@@ -55,7 +55,7 @@
           represent our company’s foundations.</p>
       </div>
       <div class="info-right">
-        <img src="Image/aboutus.jpg" alt="AboutUs">
+        <img src="CSS/Image/aboutus.jpg" alt="AboutUs">
       </div>
     </div>
   </section>
