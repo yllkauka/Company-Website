@@ -58,21 +58,23 @@ button:hover{
     background-color: rgb(51, 50, 50);
 }
 .error {
-   background: #F2DEDE;
-   color: #A94442;
+   background: #ffbfbf;
+   color: #a10704;
    padding: 10px;
    width: 95%;
    border-radius: 5px;
    margin: 20px auto;
+   font-weight: bolder;
 }
 
 .success {
-   background: #D4EDDA;
-   color: #40754C;
+   background: #bcf7ca;
+   color: #27ad46;
    padding: 10px;
    width: 95%;
    border-radius: 5px;
    margin: 20px auto;
+   font-weight: bolder;
 }
 
 h1 {

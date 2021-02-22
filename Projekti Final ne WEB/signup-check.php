@@ -22,14 +22,14 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 
 
 	if (empty($uname)) {
-		header("Location: signup.php?error=User Name is required&$user_data");
+		header("Location: signup.php?error=Username is required&$user_data");
 	    exit();
 	}else if(empty($pass)){
         header("Location: signup.php?error=Password is required&$user_data");
 	    exit();
 	}
 	else if(empty($re_pass)){
-        header("Location: signup.php?error=Re Password is required&$user_data");
+        header("Location: signup.php?error=ConfirmPassword is required&$user_data");
 	    exit();
 	}
 
