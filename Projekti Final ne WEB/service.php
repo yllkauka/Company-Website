@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title> Service </title>
         <link rel="stylesheet" href="CSS/serviceStyle.css">
-        <link rel="shortcut icon" href="Image/services.png"> 
+        <link rel="shortcut icon" href="CSS/Image/services.png"> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

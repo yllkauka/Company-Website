@@ -2,9 +2,9 @@
 <html land="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Log In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="CSS/ls.css">
-    <link rel="icon" href="Image/login.png">
+    <link rel="icon" href="CSS/Image/signup.png">
     <script src="JS/login.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

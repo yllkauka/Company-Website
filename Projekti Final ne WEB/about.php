@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <title>About Us</title>
     <link rel="stylesheet" href="CSS/aboutStyle.css">
-    <link rel="icon" href="Image/aboutl.png">
+    <link rel="icon" href="CSS/Image/aboutl.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

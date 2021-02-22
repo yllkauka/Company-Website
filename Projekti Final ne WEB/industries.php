@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title> Industries </title>
         <link rel="stylesheet" href="CSS/industries.css">
-        <link rel="shortcut icon" href="Image/industry.png">
+        <link rel="shortcut icon" href="CSS/Image/industry.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

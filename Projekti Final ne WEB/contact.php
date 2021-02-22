@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>Contact</title>
     <link rel="stylesheet" href="CSS/contactStyle.css">
-    <link rel="icon" href="Image/Contact.png">
+    <link rel="icon" href="CSS/Image/Contact.png">
     <script src="JS/contact.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
