@@ -54,7 +54,7 @@
     <p>We are a team of professionals reflecting integrity 
       and confidence we are enthusiastic and energetic, 
       well-prepared to organize. </p>
-    <a href="industries.php" class="button button-light">Read More</a>
+    <a href="about.php" class="button button-light">Read More</a>
   </div>
 </section>
   <section>
